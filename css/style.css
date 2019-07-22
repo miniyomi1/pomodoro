@@ -87,16 +87,16 @@ body{
     background-color: rgba(255,255,255,.1);
 }
 .nav li:nth-child(1){
-    background-image: url("/icons/add_white.svg");
+    background-image: url("../icons/add_white.svg");
 }
 .nav li:nth-child(2){
-     background-image: url("/icons/list_white.svg");
+     background-image: url("../icons/list_white.svg");
 }
 .nav li:nth-child(3){
-     background-image: url("/icons/analysis_white.svg");
+     background-image: url("../icons/analysis_white.svg");
 }
 .nav li:nth-child(4){
-     background-image: url("/icons/ringtone_white.svg");
+     background-image: url("../icons/ringtone_white.svg");
 }
 .nav .homeback{
     box-sizing: border-box;
@@ -219,7 +219,7 @@ transition: .5s;
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-image: url("/icons/tomato_small_gray.svg");
+    background-image: url("../icons/tomato_small_gray.svg");
     background-repeat: no-repeat;
 }
 .star label:first-of-type{
@@ -246,7 +246,7 @@ input:focus{
 
 .tomatoclick:checked ~label {
 
-    background-image:url("/icons/tomato_small_color.svg");
+    background-image:url("../icons/tomato_small_color.svg");
 }
 
 #homebk:checked + .wrapper .left{
