@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(document).ready(function(){
+            $('#clickbtn').click(function(){
+                var addtask=$('#addtask').val();
+                if(addtask==''){
+
+                }else{
+
+                    $('.tasklist').append(addtask + '<br>');
+                    $('#addtask').val('');
+                }
+                
+            });
+
+        });
+    </script>
+</head>
+<body>
+    
+    <div class="contaner">
+        <input type="checkbox" name="homebk" id="homebk">
+        <div class="wrapper">
+            <div class="left">
+                <div class="tomato">
+                    <h1 class="PODOMORO">PODOMORO</h1>
+                </div>
+                <div class="text">You don’t have any task now,<br> 
+                    please add task first!</div>
+                <span>PODOMORO</span>
+            </div>
+            
+            <div class="right">
+                <div class="nav">
+                    <ul>
+                        <li class="menu-btn white-active"></li>
+                        <li class="menu-btn white-active"></li>
+                        <li class="menu-btn white-active"></li>
+                        <li class="menu-btn white-active"></li>
+                    </ul>
+                    <label for="homebk">
+                        <div class="homeback">
+                            <img src="/icons/tomato_small_color.svg" alt="">
+                            <div class="lineback"></div>
+                        </div>
+                    </label>
+                        
+                </div>
+                <div class="content">
+                    <div class="addnewtask">
+                        <h2 class="toup listhead">add new task</h2>
+                        <span class="toup" id="addtitle">TASK TITLE</span> 
+                        <input class="newtask" id="addtask" type="text" placeholder="Add New Task"><br>
+                        <span class="toup">ESTIMATED TOMOTO</span>
+                        <div class="star">
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato10" value="tomato10" checked>
+                            <label class="rate" for="tomato10"></label>
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato9" value="tomato9" checked>
+                            <label class="rate" for="tomato9"></label>
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato8" value="tomato8" checked>
+                            <label class="rate" for="tomato8"></label>
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato7" value="tomato7" checked>
+                            <label class="rate" for="tomato7"></label>
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato6" value="tomato6" checked>
+                            <label class="rate" for="tomato6"></label>
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato5" value="tomato5" checked>
+                            <label class="rate" for="tomato5"></label>
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato4" value="tomato4" checked>
+                            <label class="rate" for="tomato4"></label>
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato3" value="tomato3" checked>
+                            <label class="rate" for="tomato3"></label>
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato2" value="tomato2" checked>
+                            <label class="rate" for="tomato2"></label>
+                            <input type="radio" name="radio1" class="tomatoclick" id="tomato1" value="tomato1" checked>
+                            <label class="rate" for="tomato1"></label>
+                            
+                        </div>
+
+                        <input class="toup" id="clickbtn" type="button" value="add task">
+                  
+                    </div>
+
+                    <div class="tasklist">
+                        <h2 class="toup listhead">add new task</h2>
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+        </div> 
+    </div>
+</body>
+</html>
